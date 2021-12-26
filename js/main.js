@@ -61,7 +61,7 @@ $("i.my_icon").click(function(){
 // End popup_video
 
 $(document).ready(function(){
-  $(".logo").fadeOut(1000);
+  $(".logo").fadeOut(2000);
 });
 
 
