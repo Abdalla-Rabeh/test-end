@@ -51,7 +51,7 @@ $(my_icon).click(function(){
     $(".popup_video iframe").attr('src',$(".popup_video iframe").attr('data-src'))
     $(".popup_video")
     .css({'display':'flex','justify-content':'center','align-items':'center','opacity':'1','top':'0'})
-    .children('.box').hide(0).show(3000);
+    .children('.box').hide(0).show(2000);
 
 });
 $("i.my_icon").click(function(){
@@ -61,7 +61,7 @@ $("i.my_icon").click(function(){
 // End popup_video
 
 $(document).ready(function(){
-  $(".logo").fadeOut(5000);
+  $(".logo").fadeOut(3000);
 });
 
 
