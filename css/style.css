@@ -377,6 +377,13 @@ a[data-fancybox] img {
   margin: auto;
   background-color: #fff;
   border-radius: 15px;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.popup .box:hover {
+  -webkit-transform: rotate3d(133, 10, 44, 360deg);
+          transform: rotate3d(133, 10, 44, 360deg);
 }
 
 .popup .box .popup-head {
