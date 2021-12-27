@@ -293,7 +293,13 @@ a[data-fancybox] img {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 30;
-      overflow: auto; }
+      overflow: auto; 
+      transition: all 1s ease-in;
+      &:hover{
+        transform: rotate3d(133, 10, 44, 
+        360deg);
+      }
+    }
       .popup .box {
         position: relative;
         top: -200px;
@@ -301,11 +307,6 @@ a[data-fancybox] img {
         margin: auto;
         background-color: #fff;
         border-radius: 15px;
-        transition: all 1s ease-in;
-        &:hover{
-          transform: rotate3d(133, 10, 44, 
-          360deg);
-        }
       }
         .popup .box .popup-head {
           position: relative;
