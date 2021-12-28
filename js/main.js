@@ -1,48 +1,3 @@
-// Initialise Carousel
-Fancybox.bind('[data-fancybox="gallery"]', {
-  Thumbs: {
-    Carousel: {
-      fill: true,
-      center: true,
-    },
-  },
-});
-Fancybox.bind("[data-fancybox-plyr]", {
-  on: {
-    reveal: (fancybox, slide) => {
-      if (typeof Plyr === undefined) {
-        return;
-      }
-
-      let $el;
-
-      if (slide.type === "html5video") {
-        $el = slide.$content.querySelector("video");
-      } else if (slide.type === "video") {
-        $el = document.createElement("div");
-        $el.classList.add("plyr__video-embed");
-
-        $el.appendChild(slide.$iframe);
-
-        slide.$content.appendChild($el);
-      }
-
-      if ($el) {
-        slide.player = new Plyr($el);
-      }
-    },
-    "Carousel.unselectSlide": (fancybox, carousel, slide) => {
-      if (slide.player) {
-        slide.player.pause();
-      }
-    },
-    "Carousel.selectSlide": (fancybox, carousel, slide) => {
-      if (slide.player) {
-        slide.player.play();
-      }
-    },
-  },
-});
 // carousel
 
 // Start popup_video
@@ -66,6 +21,13 @@ $(document).ready(function(){
 
 
 
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
 let scroll_top =$('.Scroll-top')
 $(window).scroll(function(){
     if($(window).scrollTop() >= 100){
@@ -83,3 +45,35 @@ $(".scroll_top").click(function(e){
         
     },1000)
 })
+
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 30,
+    
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+      },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });

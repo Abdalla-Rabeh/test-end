@@ -179,13 +179,10 @@ a[data-fancybox] img {
 .Courses {
   background-color: #fff;
   position: relative;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
-.Courses:hover {
-  -webkit-transform: rotate3d(133, 10, 44, 360deg);
-          transform: rotate3d(133, 10, 44, 360deg);
+.owl-stage {
+  width: auto  !important;
 }
 
 .layout {
@@ -437,6 +434,62 @@ a[data-fancybox] img {
 .popup .box .popup_video iframe {
   width: 100%;
   height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-button-prev {
+  position: relative;
+  top: -35px;
+  right: 55px;
+  left: auto;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+  border: 1px solid #f0f3fb;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: #132977;
+  border: none;
+  outline: 0;
+  background: 0 0;
 }
 
 @media (min-width: 768px) and (max-width: 991) {
