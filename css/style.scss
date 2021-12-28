@@ -110,7 +110,7 @@ ul {
   .caption {
     flex: 1;
     padding-left: 1rem;
-    h5 {
+    .h5 {
       display: inline-block;
       margin-bottom: 5px;
       padding: 3px 12px;
@@ -119,16 +119,23 @@ ul {
       border-radius: 2px;
       font-size: 12px;
     }
-    h2 {
+    h4 {
       line-height: 26px;
       font-size: 21px;
+      margin-bottom: 1px;
+      color: #2d3954;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: Poppins,sans-serif;
     }
-    span {
-      color: #77829e;
-    }
+    ul:last-child {
+      margin: 0;
+  }
     li {
       display: inline-block;
       color: #77829e;
+      list-style: none;
+      margin-right: 1rem;
     }
     strong {
       color: #1a2236;

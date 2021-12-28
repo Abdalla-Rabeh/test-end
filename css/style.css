@@ -134,7 +134,7 @@ ul {
   padding-left: 1rem;
 }
 
-.dashboard_container .caption h5 {
+.dashboard_container .caption .h5 {
   display: inline-block;
   margin-bottom: 5px;
   padding: 3px 12px;
@@ -144,18 +144,25 @@ ul {
   font-size: 12px;
 }
 
-.dashboard_container .caption h2 {
+.dashboard_container .caption h4 {
   line-height: 26px;
   font-size: 21px;
+  margin-bottom: 1px;
+  color: #2d3954;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: Poppins,sans-serif;
 }
 
-.dashboard_container .caption span {
-  color: #77829e;
+.dashboard_container .caption ul:last-child {
+  margin: 0;
 }
 
 .dashboard_container .caption li {
   display: inline-block;
   color: #77829e;
+  list-style: none;
+  margin-right: 1rem;
 }
 
 .dashboard_container .caption strong {
