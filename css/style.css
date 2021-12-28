@@ -492,6 +492,10 @@ a[data-fancybox] img {
   background: 0 0;
 }
 
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 25px;
+}
+
 @media (min-width: 768px) and (max-width: 991) {
   .navigation a {
     font-size: 10px;

@@ -392,7 +392,9 @@ width:auto  !important;
     border: none;
     outline: 0;
     background: 0 0;
-
+    &::after{
+      font-size: 25px;
+    }
 
 }
 
