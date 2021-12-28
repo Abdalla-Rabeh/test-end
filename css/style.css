@@ -87,6 +87,10 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .dashboard_container .img-content {
@@ -132,6 +136,9 @@ ul {
       -ms-flex: 1;
           flex: 1;
   padding-left: 1rem;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .dashboard_container .caption .h5 {
