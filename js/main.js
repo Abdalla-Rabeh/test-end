@@ -16,7 +16,7 @@ $("i.my_icon").click(function(){
 // End popup_video
 
 $(document).ready(function(){
-  $(".logo").fadeOut(3000);
+  $(".logo").fadeOut(2000);
 });
 
 
@@ -54,7 +54,7 @@ const swiper = new Swiper('.swiper', {
     
         centeredSlides: true,
         autoplay: {
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         },
     // If we need pagination
