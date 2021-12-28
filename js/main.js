@@ -1,5 +1,3 @@
-// carousel
-
 // Start popup_video
 let my_icon = document.querySelectorAll(".play")
 $(my_icon).click(function(){
